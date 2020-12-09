@@ -15,6 +15,7 @@ const FILES_TO_CACHE = [
   '/assets/images/icons/icon-512x512.png'
 ];
 
+
 //copied from class caching activity 12.2.20
 self.addEventListener("install", function(evt){
     evt.waitUntil(
