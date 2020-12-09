@@ -1,7 +1,8 @@
 body {
   font-size: 120%;
   font-family: 'Questrial', sans-serif;
-  background-color: rgb(228, 228, 228);
+  background-color: #e4e4e4;
+  margin-bottom: 60px;
 }
 
 #add-btn  {
@@ -30,14 +31,22 @@ table {
   width: 100%;
 }
 
-td, th {
-  border: 2px solid #747474;
+th {
+  border: 1px solid #747474;
+  font-size: 25px;
+  text-align: center;
+  padding: 9px;
+}
+
+td {
+  border: 1px solid #747474;
+  font-size: 20px;
   text-align: left;
-  padding: 15px;
+  padding: 9px;
 }
 
 tr:nth-child(even) {
-  background-color: #747474;
+  background-color: #e1dfdf;
 }
 
 .error {
@@ -46,13 +55,13 @@ tr:nth-child(even) {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 825px;
+  max-width: 1000px;
   text-align: center;
 }
 
 .total {
   font-size: 150%;
-  margin-top: 40px;
+  margin-top: 50px;
   color: #194bb8
   /* text-decoration: underline; */
 }
