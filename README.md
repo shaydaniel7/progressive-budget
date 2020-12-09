@@ -26,3 +26,13 @@ THEN that will be shown on the page, and added to their transaction history when
   * the URL to the deployed application
   * the URL to the Github repository
 
+
+## More Notes
+Need to use IndexedDB to add offline functionality. Review Module 18: NoSQL, Lesson 4: Add Offline Persistence with IndexedDB.
+
+From 19.4.4:
+Service workers do NOT need webpack to work. Because the application is already using webpack, we'll only need to prepend the names of the JavaScript files to cache in the dist/ folder. Other than that, the steps to add a service worker to an application without webpack are the same.
+
+This app  has a server and uses MongoDB as its database, so deploy this application to Heroku using MongoDB Atlas. To review this process, look at Module 18: NoSQL, Lesson 5: Add Mongoose Validation, specifically 18.5.5: Deploy to Heroku.
+
+
