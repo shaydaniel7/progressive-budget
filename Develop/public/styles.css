@@ -1,7 +1,7 @@
 body {
   font-size: 120%;
   font-family: 'Questrial', sans-serif;
-  background-color: rgb(247, 243, 221);
+  background-color: rgb(228, 228, 228);
 }
 
 #add-btn  {
@@ -31,13 +31,13 @@ table {
 }
 
 td, th {
-  border: 1px solid #b8b8b8;
+  border: 2px solid #747474;
   text-align: left;
   padding: 15px;
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #747474;
 }
 
 .error {
@@ -51,9 +51,9 @@ tr:nth-child(even) {
 }
 
 .total {
-  font-size: 140%;
+  font-size: 150%;
   margin-top: 40px;
-  color: #2564ec
+  color: #194bb8
   /* text-decoration: underline; */
 }
 
