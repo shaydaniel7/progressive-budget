@@ -5,6 +5,14 @@ body {
   margin-bottom: 60px;
 }
 
+#t-amount, #t-name  {
+  font-size: 20px;
+}
+
+/* #t-name {
+
+} */
+
 #add-btn  {
   font-size: 100%;
   color: white;
