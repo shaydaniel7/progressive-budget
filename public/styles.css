@@ -1,7 +1,7 @@
 body {
   font-size: 120%;
   font-family: 'Questrial', sans-serif;
-  background-color: #f4f4ff;
+  background-color: #e3eaf8;
   margin-bottom: 60px;
 }
 
@@ -70,7 +70,7 @@ tr:nth-child(even) {
 .total {
   font-size: 150%;
   margin-top: 50px;
-  color: #4f55cb
+  color: #033297
 }
 
 .form {

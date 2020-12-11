@@ -4,25 +4,24 @@ const CACHE_NAME = "static-cache-v2";
 const DATA_CACHE_NAME = "data-cache-v1";
 
 const FILES_TO_CACHE = [
-  '/',
-  '/index.html',
-  '/indexedDB.js',
-  '/manifest.webmanifest',
-  '/styles.css',
-  '/index.js',
-  '/service-worker.js',
-  '/assets/images/icons/icon-192x192.png',
-  '/assets/images/icons/icon-512x512.png'
+  './',
+  './index.html',
+  './indexedDB.js',
+  './manifest.webmanifest',
+  './styles.css',
+  './index.js',
+  './service-worker.js',
+  // './icons/icon-192x192.png',
+  // './icons/icon-512x512.png'
 ];
-
 
 //copied from class caching activity 12.2.20
 self.addEventListener("install", function(evt){
     evt.waitUntil(
         caches.open(CACHE_NAME).then(cache => {
             console.log("Your files were pre-cached successfully!");
-            return.cache.addAll(FILES_TO_CACHE);
-        })
+            cache.add(FILES_TO_CACHE)          
+        })  
     );
     // evt.waitUntil(caches.open(CACHE_NAME).THEN((cache)=>{
     //     cache.add(FILES_TO_CACHE)
@@ -51,8 +50,7 @@ self.addEventListener("fetch", function(evt){
                 // If the response was good, clone it and store it in the cache.
                 if (response.status === 200) {
                   cache.put(evt.request.url, response.clone());
-                }
-    
+                }   
                 return response;
               })
               .catch(err => {
@@ -60,8 +58,7 @@ self.addEventListener("fetch", function(evt){
                 return cache.match(evt.request);
               });
           }).catch(err => console.log(err))
-        );
-    
+        );   
         return;
       }
     
