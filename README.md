@@ -18,10 +18,3 @@ This Progressive Budget app allows a user to be able to add expenses and deposit
 
 ## Information
 If you have any questions about this project, you can open an issue or contact me directly at shay@shaydaniel.com. You can find more of my work on Github at [shaydaniel7](https://github.com/shaydaniel7/).  
-
-
-
-
-##### Still to do
-Need to utilize IndexedDB to add offline functionality. Review Module 18: NoSQL, Lesson 4: Add Offline Persistence with IndexedDB.
-
